@@ -1,0 +1,215 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Card title</h3>
+  </div>
+  <div class="card-body">
+    <p class="text-secondary">This is some text within a card body.</p>
+
+<div class="table-responsive">
+  <table class="table table-vcenter">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th class="w-1"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Paweł Kuna</td>
+        <td class="text-secondary">
+          UI Designer, Training
+        </td>
+        <td class="text-secondary"><a href="#" class="text-reset">paweluna@howstuffworks.com</a></td>
+        <td class="text-secondary">
+          User
+        </td>
+        <td>
+          <a href="#">Edit</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Jeffie Lewzey</td>
+        <td class="text-secondary">
+          Chemical Engineer, Support
+        </td>
+        <td class="text-secondary"><a href="#" class="text-reset">jlewzey1@seesaa.net</a></td>
+        <td class="text-secondary">
+          Admin
+        </td>
+        <td>
+          <a href="#">Edit</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Mallory Hulme</td>
+        <td class="text-secondary">
+          Geologist IV, Support
+        </td>
+        <td class="text-secondary"><a href="#" class="text-reset">mhulme2@domainmarket.com</a></td>
+        <td class="text-secondary">
+          User
+        </td>
+        <td>
+          <a href="#">Edit</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Dunn Slane</td>
+        <td class="text-secondary">
+          Research Nurse, Sales
+        </td>
+        <td class="text-secondary"><a href="#" class="text-reset">dslane3@epa.gov</a></td>
+        <td class="text-secondary">
+          Owner
+        </td>
+        <td>
+          <a href="#">Edit</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Emmy Levet</td>
+        <td class="text-secondary">
+          VP Product Management, Accounting
+        </td>
+        <td class="text-secondary"><a href="#" class="text-reset">elevet4@senate.gov</a></td>
+        <td class="text-secondary">
+          Admin
+        </td>
+        <td>
+          <a href="#">Edit</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default function Table() {
+  return (
+    <>
+      <div className="flex-fill px-lg-2 mw-100">
+        <div className="container my-4">
+          <div className="row">
+            <div className="col col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Card title</h3>
+                </div>
+                <div class="card-body">
+                  <p class="text-secondary">
+                    This is some text within a card body.
+                  </p>
+
+                  <div class="table-responsive">
+                    <table class="table table-vcenter">
+                      <thead>
+                        <tr>
+                          <th>name</th>
+                          <th>Title</th>
+                          <th>Email</th>
+                          <th>Role</th>
+                          <th class="w-1"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Paweł Kuna</td>
+                          <td class="text-secondary">UI Designer, Training</td>
+                          <td class="text-secondary">
+                            <a href="/" class="text-reset">
+                              paweluna@howstuffworks.com
+                            </a>
+                          </td>
+                          <td class="text-secondary">User</td>
+                          
+                        </tr>
+                       
+                        
+                       
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+  if (isLoading) {
+    return <div>Loading...</div>; // Show loading state while fetching data
+  }
+
+
+  isLoading, error
+
+  if (error) {
+    return <div>Error: {error.message}</div>; // Show error message if fetch fails
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const cardsData = [
+  {
+    productname: "Italian Basil",
+    title: "33.80",
+    email: "mayuresh1708@gmail.com",
+    role: "front end developer",
+  },
+  {
+    name: "Swiss Chard",
+    title: "31.80",
+    email: "deepakshelke@gmail.com",
+    role: "front end developer",
+  },
+
+  {
+    name: "Broccoli",
+    title: "29.80",
+    email: "priyanshusingh@gmail.com",
+    role: "front end developer",
+  },
+];
+
+export default cardsData;

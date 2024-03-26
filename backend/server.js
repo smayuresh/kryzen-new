@@ -34,7 +34,7 @@ const data = [
     weekshigh: "₹59.00",
     weekslow: "₹46.00",
     trend: "",
-    href: "/broccoli",
+    href: "/",
   },
 
   {
@@ -55,6 +55,62 @@ const data = [
     trend: "",
     href: "/",
   },
+
+  {
+    productname: "Pak Choi",
+    wholesaleprice: "₹37.70",
+    retailprice: "₹58.00",
+    weekshigh: "₹58.00",
+    weekslow: "₹51.00",
+    trend: "",
+    href: "/",
+  },
+  {
+    productname: "Asparagus",
+    wholesaleprice: "₹179.40",
+    retailprice: "₹276.00",
+    weekshigh: "₹285.00",
+    weekslow: "₹276.00",
+    trend: "",
+    href: "/",
+  },
+  {
+    productname: "Thyme",
+    wholesaleprice: "₹76.05",
+    retailprice: "₹117.00",
+    weekshigh: "₹129.00",
+    weekslow: "₹117.00",
+    trend: "",
+    href: "/",
+  },
+  {
+    productname: "Broccoli Florets",
+    wholesaleprice: "₹120.25",
+    retailprice: "₹185.00",
+    weekshigh: "₹190.00",
+    weekslow: "₹180.00",
+    trend: "",
+    href: "/",
+  },
+  {
+    productname: "Lollo Rossa",
+    wholesaleprice: "₹36.40",
+    retailprice: "₹56.00",
+    weekshigh: "₹72.00",
+    weekslow: "₹49.00",
+    trend: "",
+    href: "/",
+  },
+  {
+    productname: "Red Oak Lettuce",
+    wholesaleprice: "₹35.10",
+    retailprice: "₹54.00",
+    weekshigh: "₹56.00",
+    weekslow: "₹46.00",
+    trend: "",
+    href: "/",
+  },
+
   // Add more data here
 ];
 
@@ -223,31 +279,166 @@ const broccoliData = [
   },
 ];
 
+const kaleData = [
+  {
+    date: "7 Mar 2024",
+    retailprice: "₹51.00",
+    wholesaleprice: "₹32.00 - ₹35.00",
+    priceatfarm: "₹33.00 - ₹31.00",
+  },
+  {
+    date: "6 Mar 2024",
+    retailprice: "₹54.00",
+    wholesaleprice: "₹34.00 - ₹37.00",
+    priceatfarm: "₹35.00 - ₹32.00",
+  },
+  {
+    date: "5 Mar 2024",
+    retailprice: "₹46.00",
+    wholesaleprice: "₹29.00 - ₹31.00",
+    priceatfarm: "₹30.00 - ₹28.00",
+  },
+  {
+    date: "4 Mar 2024",
+    retailprice: "₹46.00",
+    wholesaleprice: "₹29.00 - ₹31.00",
+    priceatfarm: "₹30.00 - ₹28.00",
+  },
+  {
+    date: "3 Mar 2024",
+    retailprice: "₹48.00",
+    wholesaleprice: "₹30.00 - ₹33.00",
+    priceatfarm: "₹31.00 - ₹29.00",
+  },
+  {
+    date: "2 Mar 2024",
+    retailprice: "₹57.00",
+    wholesaleprice: "₹36.00 - ₹39.00",
+    priceatfarm: "₹37.00 - ₹34.00",
+  },
+  {
+    date: "1 Mar 2024",
+    retailprice: "₹55.00",
+    wholesaleprice: "₹35.00 - ₹37.00",
+    priceatfarm: "₹36.00 - ₹33.00",
+  },
+  {
+    date: "29 Feb 2024",
+    retailprice: "₹57.00",
+    wholesaleprice: "₹36.00 - ₹39.00",
+    priceatfarm: "₹37.00 - ₹34.00",
+  },
+  {
+    date: "28 Feb 2024",
+    retailprice: "₹51.00",
+    wholesaleprice: "₹32.00 - ₹35.00",
+    priceatfarm: "₹33.00 - ₹31.00",
+  },
+  {
+    date: "27 Feb 2024",
+    retailprice: "₹46.00",
+    wholesaleprice: "₹29.00 - ₹31.00",
+    priceatfarm: "₹30.00 - ₹28.00",
+  },
+  {
+    date: "26 Feb 2024",
+    retailprice: "₹54.00",
+    wholesaleprice: "₹34.00 - ₹37.00",
+    priceatfarm: "₹35.00 - ₹32.00",
+  },
+  {
+    date: "25 Feb 2024",
+    retailprice: "₹55.00",
+    wholesaleprice: "₹35.00 - ₹37.00",
+    priceatfarm: "₹36.00 - ₹33.00",
+  },
+  {
+    date: "24 Feb 2024",
+    retailprice: "₹56.00",
+    wholesaleprice: "₹35.00 - ₹38.00",
+    priceatfarm: "₹36.00 - ₹34.00",
+  },
+  {
+    date: "23 Feb 2024",
+    retailprice: "₹50.00",
+    wholesaleprice: "₹32.00 - ₹34.00",
+    priceatfarm: "₹33.00 - ₹30.00",
+  },
+  {
+    date: "22 Feb 2024",
+    retailprice: "₹58.00",
+    wholesaleprice: "₹37.00 - ₹39.00",
+    priceatfarm: "₹38.00 - ₹35.00",
+  },
+  {
+    date: "21 Feb 2024",
+    retailprice: "₹59.00",
+    wholesaleprice: "₹37.00 - ₹40.00",
+    priceatfarm: "₹38.00 - ₹35.00",
+  },
+  {
+    date: "20 Feb 2024",
+    retailprice: "₹57.00",
+    wholesaleprice: "₹36.00 - ₹39.00",
+    priceatfarm: "₹37.00 - ₹34.00",
+  },
+  {
+    date: "19 Feb 2024",
+    retailprice: "₹50.00",
+    wholesaleprice: "₹32.00 - ₹34.00",
+    priceatfarm: "₹33.00 - ₹30.00",
+  },
+  {
+    date: "18 Feb 2024",
+    retailprice: "₹46.00",
+    wholesaleprice: "₹29.00 - ₹31.00",
+    priceatfarm: "₹30.00 - ₹28.00",
+  },
+  {
+    date: "17 Feb 2024",
+    retailprice: "₹50.00",
+    wholesaleprice: "₹32.00 - ₹34.00",
+    priceatfarm: "₹33.00 - ₹30.00",
+  },
+  {
+    date: "16 Feb 2024",
+    retailprice: "₹54.00",
+    wholesaleprice: "₹34.00 - ₹37.00",
+    priceatfarm: "₹35.00 - ₹32.00",
+  },
+  {
+    date: "15 Feb 2024",
+    retailprice: "₹53.00",
+    wholesaleprice: "₹33.00 - ₹36.00",
+    priceatfarm: "₹34.00 - ₹32.00",
+  },
+  {
+    date: "14 Feb 2024",
+    retailprice: "₹56.00",
+    wholesaleprice: "₹35.00 - ₹38.00",
+    priceatfarm: "₹36.00 - ₹34.00",
+  },
+];
 
-
-{/*const chartData = {
+/*const chartData = {
   labels: ['Jan 15', 'Jan 31', 'Feb 15', 'Feb 29', 'Mar 15', 'Mar 31', 'Apr 15', 'Apr 30', 'May 15', 'May 31', 'Jun 15', 'Jun 30'],
   datasets: [{
       label: 'Retail Price (Per Kg)',
       data: [20, 46, 30, 70,] // Actual data points
   }]
-};*/}
+};*/
 
-
-const combinedData = {
-
-  broccoliData: broccoliData
+/*const combinedData = {
+  broccoliData: broccoliData,
 };
-
 
 app.get("/api/combinedData", (req, res) => {
   res.json(combinedData);
-});
+});*/
+
 app.get("/api/chartData", (req, res) => {
   res.json(chartData);
 });
-
-
 
 // Endpoint for fetching paginated data
 app.get("/api/data", (req, res) => {
@@ -266,6 +457,10 @@ app.get("/api/data", (req, res) => {
 
 app.get("/api/broccolidata", (req, res) => {
   res.json(broccoliData);
+});
+
+app.get("/api/kaledata", (req, res) => {
+  res.json(kaleData);
 });
 
 // Start the server

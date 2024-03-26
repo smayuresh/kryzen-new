@@ -1,215 +1,175 @@
-<div class="card">
-  <div class="card-header">
-    <h3 class="card-title">Card title</h3>
-  </div>
-  <div class="card-body">
-    <p class="text-secondary">This is some text within a card body.</p>
 
-<div class="table-responsive">
-  <table class="table table-vcenter">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Title</th>
-        <th>Email</th>
-        <th>Role</th>
-        <th class="w-1"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Paweł Kuna</td>
-        <td class="text-secondary">
-          UI Designer, Training
-        </td>
-        <td class="text-secondary"><a href="#" class="text-reset">paweluna@howstuffworks.com</a></td>
-        <td class="text-secondary">
-          User
-        </td>
-        <td>
-          <a href="#">Edit</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Jeffie Lewzey</td>
-        <td class="text-secondary">
-          Chemical Engineer, Support
-        </td>
-        <td class="text-secondary"><a href="#" class="text-reset">jlewzey1@seesaa.net</a></td>
-        <td class="text-secondary">
-          Admin
-        </td>
-        <td>
-          <a href="#">Edit</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Mallory Hulme</td>
-        <td class="text-secondary">
-          Geologist IV, Support
-        </td>
-        <td class="text-secondary"><a href="#" class="text-reset">mhulme2@domainmarket.com</a></td>
-        <td class="text-secondary">
-          User
-        </td>
-        <td>
-          <a href="#">Edit</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Dunn Slane</td>
-        <td class="text-secondary">
-          Research Nurse, Sales
-        </td>
-        <td class="text-secondary"><a href="#" class="text-reset">dslane3@epa.gov</a></td>
-        <td class="text-secondary">
-          Owner
-        </td>
-        <td>
-          <a href="#">Edit</a>
-        </td>
-      </tr>
-      <tr>
-        <td>Emmy Levet</td>
-        <td class="text-secondary">
-          VP Product Management, Accounting
-        </td>
-        <td class="text-secondary"><a href="#" class="text-reset">elevet4@senate.gov</a></td>
-        <td class="text-secondary">
-          Admin
-        </td>
-        <td>
-          <a href="#">Edit</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-
-
-
-
-
-
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default function Table() {
-  return (
-    <>
-      <div className="flex-fill px-lg-2 mw-100">
-        <div className="container my-4">
-          <div className="row">
-            <div className="col col-12">
-              <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title">Card title</h3>
-                </div>
-                <div class="card-body">
-                  <p class="text-secondary">
-                    This is some text within a card body.
-                  </p>
-
-                  <div class="table-responsive">
-                    <table class="table table-vcenter">
-                      <thead>
-                        <tr>
-                          <th>name</th>
-                          <th>Title</th>
-                          <th>Email</th>
-                          <th>Role</th>
-                          <th class="w-1"></th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Paweł Kuna</td>
-                          <td class="text-secondary">UI Designer, Training</td>
-                          <td class="text-secondary">
-                            <a href="/" class="text-reset">
-                              paweluna@howstuffworks.com
-                            </a>
-                          </td>
-                          <td class="text-secondary">User</td>
-                          
-                        </tr>
-                       
-                        
-                       
-                      
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-  if (isLoading) {
-    return <div>Loading...</div>; // Show loading state while fetching data
+,
+  {
+    "id": 7,
+    productname: "Pak Choi",
+    wholesaleprice: "₹37.70",
+    retailprice: "₹58.00",
+    weekshigh: "₹58.00",
+    weekslow: "₹51.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 8,
+    productname: "Asparagus",
+    wholesaleprice: "₹179.40",
+    retailprice: "₹276.00",
+    weekshigh: "₹285.00",
+    weekslow: "₹276.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 9,
+    productname: "Thyme",
+    wholesaleprice: "₹76.05",
+    retailprice: "₹117.00",
+    weekshigh: "₹129.00",
+    weekslow: "₹117.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 10,
+    productname: "Broccoli Florets",
+    wholesaleprice: "₹120.25",
+    retailprice: "₹185.00",
+    weekshigh: "₹190.00",
+    weekslow: "₹180.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 11,
+    productname: "Lollo Rossa",
+    wholesaleprice: "₹36.40",
+    retailprice: "₹56.00",
+    weekshigh: "₹72.00",
+    weekslow: "₹49.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 12,
+    productname: "Red Oak Lettuce",
+    wholesaleprice: "₹35.10",
+    retailprice: "₹54.00",
+    weekshigh: "₹56.00",
+    weekslow: "₹46.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 13,
+    productname: "Green Butterhead Lettuce",
+    wholesaleprice: "₹35.75",
+    retailprice: "₹55.00",
+    weekshigh: "₹55.00",
+    weekslow: "₹47.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 14,
+    productname: "Romaine Lettuce",
+    wholesaleprice: "₹34.45",
+    retailprice: "₹53.00",
+    weekshigh: "₹53.00",
+    weekslow: "₹46.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 15,
+    productname: "Tulsi",
+    wholesaleprice: "₹52.00",
+    retailprice: "₹80.00",
+    weekshigh: "₹80.00",
+    weekslow: "₹63.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 16,
+    productname: "Leeks",
+    wholesaleprice: "₹51.35",
+    retailprice: "₹79.00",
+    weekshigh: "₹97.00",
+    weekslow: "₹79.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 17,
+    productname: "Mint",
+    wholesaleprice: "₹21.45",
+    retailprice: "₹33.00",
+    weekshigh: "₹38.00",
+    weekslow: "₹31.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 18,
+    productname: "Amaranthus",
+    wholesaleprice: "₹23.40",
+    retailprice: "₹36.00",
+    weekshigh: "₹39.00",
+    weekslow: "₹32.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 19,
+    productname: "Palak",
+    wholesaleprice: "₹44.85",
+    retailprice: "₹69.00",
+    weekshigh: "₹70.00",
+    weekslow: "₹60.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 20,
+    productname: "Amaranthus green",
+    wholesaleprice: "₹51.35",
+    retailprice: "₹79.00",
+    weekshigh: "₹79.00",
+    weekslow: "₹61.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 21,
+    productname: "Colocasia Leaf",
+    wholesaleprice: "₹71.50",
+    retailprice: "₹110.00",
+    weekshigh: "₹123.00",
+    weekslow: "₹106.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 22,
+    productname: "Methi",
+    wholesaleprice: "₹40.95",
+    retailprice: "₹63.00",
+    weekshigh: "₹83.00",
+    weekslow: "₹63.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 23,
+    productname: "Drumstick",
+    wholesaleprice: "₹48.10",
+    retailprice: "₹74.00",
+    weekshigh: "₹78.00",
+    weekslow: "₹63.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 24,
+    productname: "Green Coral",
+    wholesaleprice: "₹56.55",
+    retailprice: "₹87.00",
+    weekshigh: "₹91.00",
+    weekslow: "₹72.00",
+   trend: "",  href:"/",
+  },
+  {
+    "id": 25,
+    productname: "Simpson Lettuce",
+    wholesaleprice: "₹53.95",
+    retailprice: "₹83.00",
+    weekshigh: "₹109.00",
+    weekslow: "₹83.00",
+   trend: "",  href:"/",
   }
-
-
-  isLoading, error
-
-  if (error) {
-    return <div>Error: {error.message}</div>; // Show error message if fetch fails
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const cardsData = [
-  {
-    productname: "Italian Basil",
-    title: "33.80",
-    email: "mayuresh1708@gmail.com",
-    role: "front end developer",
-  },
-  {
-    name: "Swiss Chard",
-    title: "31.80",
-    email: "deepakshelke@gmail.com",
-    role: "front end developer",
-  },
-
-  {
-    name: "Broccoli",
-    title: "29.80",
-    email: "priyanshusingh@gmail.com",
-    role: "front end developer",
-  },
-];
-
-export default cardsData;
+  
+].

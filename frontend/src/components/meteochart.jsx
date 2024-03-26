@@ -1,72 +1,65 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Chart from 'chart.js/auto';
+import axios from 'axios';
 
 const MeteoChart = () => {
-  const [weatherData, setWeatherData] = useState(null);
+    const [weatherData, setWeatherData] = useState(null);
 
-  // Function to fetch weather data from OpenMeteo API
-  const fetchWeatherData = async () => {
-    try {
-      // Make a GET request to fetch weather data
-      const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=temperature_2m_max,temperature_2m_min');
-      if (!response.ok) {
-        throw new Error('Failed to fetch weather data');
-      }
-      const data = await response.json();
-      
-      // Extracting relevant weather data (daily temperature)
-      const dailyTemperatureData = data.daily;
-      setWeatherData(dailyTemperatureData);
-    } catch (error) {
-      console.error('Error fetching weather data:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchWeatherData();
-  }, []);
-
-  useEffect(() => {
-    const renderChart = () => {
-      if (weatherData) {
-        const ctx = document.getElementById('weatherChart').getContext('2d');
-        new Chart(ctx, {
-          type: 'line',
-          data: {
-            labels: weatherData.map((entry, index) => index.toString()), // Assuming daily data, you can adjust labels accordingly
-            datasets: [{
-              label: 'Max Temperature (°C)',
-              data: weatherData.map(entry => entry.temperature_2m_max),
-              borderColor: 'rgb(255, 99, 132)',
-              tension: 0.1
-            }, {
-              label: 'Min Temperature (°C)',
-              data: weatherData.map(entry => entry.temperature_2m_min),
-              borderColor: 'rgb(54, 162, 235)',
-              tension: 0.1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
+    useEffect(() => {
+        const fetchWeatherData = async () => {
+            try {
+                // Fetch weather data from the Open-Meteo API
+                const response = await axios.get('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=temperature_2m_max,temperature_2m_min,uv_index_max');
+                setWeatherData(response.data);
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
             }
-          }
-        });
-      }
-    };
+        };
 
-    renderChart(); // Call renderChart directly here
+        fetchWeatherData();
+    }, []);
 
-  }, [weatherData]); // Dependency array includes only weatherData
+    useEffect(() => {
+        if (weatherData && weatherData.forecast) {
+            // Extract necessary data for chart
+            const temperatures = weatherData.forecast.map(day => day.temperature);
+            const dates = weatherData.forecast.map(day => new Date(day.time * 1000).toLocaleDateString());
 
-  return (
-    <div>
-      <h2>Weather Chart</h2>
-      <canvas id="weatherChart" width="400" height="200"></canvas>
-    </div>
-  );
+            // Create the chart
+            const ctx = document.getElementById('weatherChart');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: 'Temperature (°C)',
+                        data: temperatures,
+                        borderColor: 'blue',
+                        borderWidth: 1,
+                        fill: false
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+        }
+    }, [weatherData]);
+
+    return (
+        <div className="card">
+            <div className="card-body">
+                <h5 className="card-title">Weather Forecast</h5>
+                <div className="chart-container">
+                    <canvas id="weatherChart"></canvas>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default MeteoChart;

@@ -1,47 +1,8 @@
-import React, { useState, useEffect } from "react";
-import LineChart from "../components/chart";
-import axios from "axios";
+import React from "react";
 
-export default function Broccoli() {
-  const [broccoliData, setBroccoliData] = useState([]);
-
-  useEffect(() => {
-    const fetchBroccoliData = async () => {
-      try {
-        const response = await axios.get("http://localhost:4000/api/broccolidata");
-        if (response.status !== 200) {
-          throw new Error("Failed to fetch broccoli data");
-        }
-        setBroccoliData(response.data);
-      } catch (error) {
-        console.error("Error fetching broccoli data:", error);
-      }
-    };
-
-    fetchBroccoliData();
-  }, []);
-
+export default function Kaletable() {
   return (
-    <div className="page-wrapper">
-      <div className="page-header d-print-none">
-        <div className="container">
-          <div className="row g-3 align-items-center">
-            <div className="col-auto"></div>
-            <div className="col">
-              <h2 className="page-title">Broccoli</h2>
-              <div className="text-secondary">
-                <ul className="list-inline list-inline-dots mb-0">
-                  <li className="list-inline-item"></li>
-                  <li className="list-inline-item">Broccoli</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <LineChart />
-
+    <div>
       {/* Page body */}
       <div className="page-body">
         <div className="container-xl">
@@ -60,9 +21,9 @@ export default function Broccoli() {
                     </thead>
                     <tbody>
                       {/* Map over broccoliData and generate table rows */}
-                      {broccoliData.map((item, index) => (
+                      {kaledata.map((item, index) => (
                         <tr key={index}>
-                          <td>{item.data}</td>
+                          <td>{item.date}</td>
                           <td>{item.retailprice}</td>
                           <td>{item.wholesaleprice}</td>
                           <td>{item.priceatfarm}</td>

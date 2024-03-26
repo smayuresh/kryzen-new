@@ -6,16 +6,21 @@ import Pricewatcher from "./components/pricewatcher";
 import Header from "./components/header";
 /*import Table from "./components/table";*/
 
-import Broccoli from "./vegetables/broccoli";
-import Welcome from "./welcome";
-/*import MeteoChart from "./components/meteochart";*/
+import Broccoli from "./vegetables/broccoli/broccoli";
 
+import Navbar from "./components/navbar";
+import Buyerconnect from "./components/buyerconnect";
+
+import Nurseries from "./components/nurseries";
+import Swisschard from "./vegetables/swisschard/swisschard";
+import Kale from "./vegetables/kale/kale";
+/*import MeteoChart from "./components/meteochart";*/
 
 function App() {
   return (
     <>
-{/*<MeteoChart/>*/}
-    
+      {/*<MeteoChart/>*/}
+
       <Header />
       {/*<div>
 {Datadata.map((e) => {
@@ -25,12 +30,15 @@ function App() {
           role={e.role}/>;
         })}
       </div>*/}
-
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Welcome />} />
+        <Route path="/buyerconnect" element={<Buyerconnect />} />
         <Route path="/homenavbar" element={<HomeNavbar />} />
         <Route path="/pricewatcher" element={<Pricewatcher />} />
+        <Route path="/nursuries" element={<Nurseries />} />
         <Route path="/broccoli" element={<Broccoli />} />
+        <Route path="/swisschard" element={<Swisschard/>} />
+        <Route path="/kale" element={<Kale/>}/>
       </Routes>
     </>
   );

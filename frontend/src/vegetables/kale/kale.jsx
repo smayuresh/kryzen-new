@@ -1,6 +1,15 @@
 import React from "react";
 
+
+
 export default function Kale() {
+
+
+
+
+
+
+
   return (
     <div>
 
@@ -21,6 +30,14 @@ export default function Kale() {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
 
 
 

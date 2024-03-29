@@ -3,91 +3,128 @@ import React from "react";
 export default function HomeNavbar() {
   return (
     <>
-      <div>
-        <div>
-          
-          <div className="container">
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <a href="/p/a">Accounts</a>
-                </li>
-                <li className="breadcrumb-item">Test Account's team</li>
-              </ol>
-            </nav>
+      <div className="page-wrapper">
+        {/*<---Breadcrumbs--->*/}
+        <div className="page-header d-print-none">
+          <div className="container-xl">
+            <ol className="breadcrumb" aria-label="breadcrumbs">
+              <li className="breadcrumb-item">
+                <a href="/homenavbar">Home</a>
+              </li>
+              <li className="breadcrumb-item active" aria-current="page">
+                <a href="/">Test Account's Team</a>
+              </li>
+            </ol>
+          </div>
+        </div>
 
-            <div className="row">
-              <div className="col-6 col-sm-4 col-lg-6">
-                <div className="card">
-                  <div className="card-body p-3 text-center">
-                    <div className="h1 m-0" style={{ color: "#23bf6a" }}>
-                      ₹0.00
+        {/*<---Page body--->*/}
+        <div className="page-body">
+          <div className="container-xl">
+            <div className="row row-deck row-cards">
+              <div className="col-12">
+                <div className="row row-cards">
+                  <div className="col-lg-6">
+                    <div className="card">
+                      <div className="card-body p-3 text-center">
+                        <div className="d-flex align-items-center">
+                          <div className="subheader">Revenue</div>
+                          <div className="ms-auto lh-1">
+                            <div className="dropdown">
+                              <a
+                                className="dropdown-toggle text-secondary"
+                                href="/"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                Last 7 days
+                              </a>
+                              <div
+                                className="dropdown-menu dropdown-menu-end"
+                                style={{}}
+                              >
+                                <a className="dropdown-item active" href="/">
+                                  Last 7 days
+                                </a>
+                                <a className="dropdown-item" href="/">
+                                  Last 30 days
+                                </a>
+                                <a className="dropdown-item" href="/">
+                                  Last 3 months
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="h1 m-0" style={{ color: "#23bf6a" }}>
+                          ₹0.00
+                        </div>
+                        <div className="text-muted">30 Days Revenue</div>
+                      </div>
                     </div>
-                    <div className="text-muted">30 Days Revenue</div>
                   </div>
-                </div>
-              </div>
-              <div className="col-6 col-sm-4 col-lg-6">
-                <div className="card">
-                  <div className="card-body p-3 text-center">
-                    <div className="h1 m-0">0kg</div>
-                    <div className="text-muted">30 Days Output</div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div className="row">
-              <div className="col-6 col-sm-4 col-lg-3">
-                <div className="card">
-                  <div className="card-body p-3 text-center">
-                    <div className="h1 m-0">1</div>
-                    <div className="text-muted">Nurseries</div>
+                  <div className="col-lg-6">
+                    <div className="card">
+                      <div className="card-body p-3 text-center">
+                        <div className="h1 m-0">0kg</div>
+                        <div className="text-muted">30 Days Output</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-6 col-sm-4 col-lg-3">
-                <div className="card">
-                  <div className="card-body p-3 text-center">
-                    <div className="h1 m-0">0</div>
-                    <div className="text-muted">Active Batches</div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-6 col-sm-4 col-lg-3">
-                <div className="card">
-                  <div className="card-body p-3 text-center">
-                    <div className="h1 m-0"></div>
-                    <div className="text-muted">Current Revenue</div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-6 col-sm-4 col-lg-3">
-                <div className="card">
-                  <div className="card-body p-3 text-center">
-                    <div className="h1 m-0"></div>
-                    <div className="text-muted">Current Output</div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div className="row row-cards">
+              <div className="col-12">
+                <div className="row row-cards">
+                  <div className="col-sm-6 col-lg-3">
+                    <div className="card">
+                      <div className="card-body p-3 text-center">
+                        <div className="h1 m-0">1</div>
+                        <div className="text-muted">Nurseries</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="ccol-sm-6 col-lg-3">
+                    <div className="card">
+                      <div className="card-body p-3 text-center">
+                        <div className="h1 m-0">0</div>
+                        <div className="text-muted">Active Batches</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-sm-6 col-lg-3">
+                    <div className="card">
+                      <div className="card-body p-3 text-center">
+                        <div className="h1 m-0"></div>
+                        <div className="text-muted">Current Revenue</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-sm-6 col-lg-3">
+                    <div className="card">
+                      <div className="card-body p-3 text-center">
+                        <div className="h1 m-0"></div>
+                        <div className="text-muted">Current Output</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="col-12">
                 <div className="card ">
                   <div className="card-header">
                     <h3 className="card-title">Test Account's team</h3>
-                    <div className="card-options">
-                      <div className="btn-list">
-                        <a
-                          className="btn btn-primary btn-sm"
-                          href="/p/a/1509/edit"
-                        >
-                          Edit
-                        </a>
-                      </div>
+                    <div className="card-actions">
+                      <a href="/" className="btn btn-primary">
+                        Edit
+                      </a>
                     </div>
                   </div>
+
                   <div className="card-body">
                     <dl className="row">
                       <dt className="col-sm-4">Name</dt>
@@ -98,22 +135,15 @@ export default function HomeNavbar() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="row row-cards">
               <div className="col-12">
                 <div className="card ">
                   <div className="card-header">
                     <h3 className="card-title">Nurseries</h3>
-                    <div className="card-options">
-                      <div className="btn-list">
-                        <a
-                          className="btn btn-primary btn-sm"
-                          href="/p/a/1509/nurseries/new"
-                        >
-                          New
-                        </a>
-                      </div>
+                    <div className="card-actions">
+                      <a href="/" className="btn btn-primary">
+                        Edit
+                      </a>
                     </div>
                   </div>
                   <div className="table-responsive">
@@ -130,7 +160,7 @@ export default function HomeNavbar() {
                       <tbody>
                         <tr>
                           <td>
-                            <a href="/p/a/1509/nurseries/2403">Kryzen</a>
+                            <a href="/">Mayuresh</a>
                           </td>
                           <td>0 batches</td>
                           <td>0</td>
@@ -141,15 +171,6 @@ export default function HomeNavbar() {
                               href="/p/a/1509/nurseries/2403"
                             >
                               View
-                            </a>
-                            <a
-                              className="btn btn-danger btn-sm"
-                              data-confirm="Delete shubham?"
-                              rel="nofollow"
-                              data-method="delete"
-                              href="/p/a/1509/nurseries/2403"
-                            >
-                              <i className="fe fe-trash"></i>
                             </a>
                           </td>
                         </tr>
@@ -173,20 +194,15 @@ export default function HomeNavbar() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="row row-cards">
               <div className="col-12">
                 <div className="card ">
                   <div className="card-header">
                     <h3 className="card-title">Farms</h3>
                     <div className="card-options">
-                      <div className="btn-list">
-                        <a
-                          className="btn btn-primary btn-sm"
-                          href="/p/a/1509/farms/new"
-                        >
-                          New
+                      <div className="card-actions">
+                        <a href="/" className="btn btn-primary">
+                          Edit
                         </a>
                       </div>
                     </div>
@@ -223,38 +239,6 @@ export default function HomeNavbar() {
                 </div>
               </div>
             </div>
-            <footer className="footer">
-              <div className="container">
-                <div className="row align-items-center flex-row-reverse">
-                  <div className="col col-auto ml-auto">
-                    <div className="row align-items-center"></div>
-                  </div>
-                  <div className="col col-12 col-lg-auto mt-3 mt-lg-0 text-center">
-                    <div className="text-center">
-                      Copyright ©️ 2024 Kryzen Biotech. All rights reserved.
-                      <br />
-                      Made in India with{" "}
-                      <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="far"
-                        data-icon="heart"
-                        className="svg-inline--fa fa-heart fa-w-16 icon text-danger"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
-                        ></path>
-                      </svg>
-                      .
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
           </div>
         </div>
       </div>

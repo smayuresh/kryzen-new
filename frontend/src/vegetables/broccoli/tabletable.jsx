@@ -78,7 +78,7 @@ const Tabletable = () => {
                       <div className="loader" />
                       <div className="dimmer-content">
                         <div className="table-responsive">
-                          <table className="table table-vcenter">
+                          <table className="table table-vcenter text-nowrap table-hover">
                             <thead>
                               <tr>
                                 <th>Product Name</th>
@@ -127,29 +127,29 @@ const Tabletable = () => {
                               Next
                             </button>
                           </div>
+                        </div>
 
-                          <div className="my-2">
-                            <h3>Disclosure:</h3>
-                            <ol>
-                              <li>
-                                This lists are made available on as available
-                                basis.
-                              </li>
-                              <li>
-                                Do not consider this pricing as selling or
-                                buying price.
-                              </li>
-                              <li>
-                                Price watcher only helps you to understand the
-                                market directions.
-                              </li>
-                              <li>
-                                if you want to suggest any changes or want to
-                                add any crop here give us call on 9870-424-425
-                                or email us at contact@kryzen.com
-                              </li>
-                            </ol>
-                          </div>
+                        <div className="my-2">
+                          <h3>Disclosure:</h3>
+                          <ol>
+                            <li>
+                              This lists are made available on as available
+                              basis.
+                            </li>
+                            <li>
+                              Do not consider this pricing as selling or buying
+                              price.
+                            </li>
+                            <li>
+                              Price watcher only helps you to understand the
+                              market directions.
+                            </li>
+                            <li>
+                              if you want to suggest any changes or want to add
+                              any crop here give us call on 9870-424-425 or
+                              email us at contact@kryzen.com
+                            </li>
+                          </ol>
                         </div>
                       </div>
                     </div>
